@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Hangman!</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- googleicons links -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=BIZ+UDMincho&family=Lato:ital,wght@1,300&family=PT+Sans+Narrow&family=Playfair+Display:ital,wght@1,600&family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="welcome-message" id="welcome-message">
+    <h1>Welcome to my Hangman Game</h1>
+    <!-- <br> -->
+    <button id="start-btn"><span class="material-icons">
+      play_circle_outline
+      </span></button>
+     
+  </div>
+
+  <div class="genre-selection hide">
+    <h3>Choose Category!</h3>
+    <button id="capitals">Football</button>
+    <button id="movies">Films</button>
+    <button id="cities">Cities</button>
+    <button id="dramas">Dramas</button>
+    <button id="yt">Youtubers</button>
+   </div>
+
+
+    <div class="wrapper1 hide">
+        <h1>Hangman</h1>
+         <!-- <h2>JavaScript Hangman Game</h2> -->
+         <!-- <p>Use the alphabet below to guess the word, or click hint to get a clue. </p> -->
+     </div>
+     <div class="wrapper2 hide">
+         <div id="buttons">
+         </div>  
+       <br><br><br><br><br>
+
+
+
+         <p id="catagoryName"></p>
+         <div id="hold">
+         </div>
+         <p id="mylives"></p>
+         <p id="clue" class="hide">Clue -</p>  
+          <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+         <div class="container">
+           <button id="hint">Hint</button>
+           <button id="reset">Play again</button>
+           <button id="finalreset">Reset</button>
+         </div>
+     </div>
+    
+
+
+
+     <script src="script.js"></script>
+</body>
+</html>
